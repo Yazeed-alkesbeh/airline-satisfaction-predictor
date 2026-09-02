@@ -1,0 +1,38 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Environment files
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Model artifacts (optional - may want to keep)
+# model/artifacts/
+
+# Logs
+*.log
+
+# Data
+user_feedback.csv
+
+.env
+*.joblib
+data/*.json

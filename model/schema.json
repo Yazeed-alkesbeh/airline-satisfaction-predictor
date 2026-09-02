@@ -1,0 +1,30 @@
+{
+  "target": {
+    "name": "satisfaction",
+    "values": ["neutral or dissatisfied", "satisfied"]
+  },
+  "features": [
+    {"name": "Gender", "type": "categorical", "values": ["Male", "Female"]},
+    {"name": "Customer Type", "type": "categorical", "values": ["Loyal Customer", "disloyal Customer"]},
+    {"name": "Age", "type": "integer", "min": 7, "max": 85},
+    {"name": "Type of Travel", "type": "categorical", "values": ["Personal Travel", "Business travel"]},
+    {"name": "Class", "type": "categorical", "values": ["Business", "Eco", "Eco Plus"]},
+    {"name": "Flight Distance", "type": "integer", "min": 31, "max": 4983},
+    {"name": "Inflight wifi service", "type": "rating", "min": 0, "max": 5},
+    {"name": "Departure/Arrival time convenient", "type": "rating", "min": 0, "max": 5},
+    {"name": "Ease of Online booking", "type": "rating", "min": 0, "max": 5},
+    {"name": "Gate location", "type": "rating", "min": 0, "max": 5},
+    {"name": "Food and drink", "type": "rating", "min": 0, "max": 5},
+    {"name": "Online boarding", "type": "rating", "min": 0, "max": 5},
+    {"name": "Seat comfort", "type": "rating", "min": 0, "max": 5},
+    {"name": "Inflight entertainment", "type": "rating", "min": 0, "max": 5},
+    {"name": "On-board service", "type": "rating", "min": 0, "max": 5},
+    {"name": "Leg room service", "type": "rating", "min": 0, "max": 5},
+    {"name": "Baggage handling", "type": "rating", "min": 1, "max": 5},
+    {"name": "Checkin service", "type": "rating", "min": 0, "max": 5},
+    {"name": "Inflight service", "type": "rating", "min": 0, "max": 5},
+    {"name": "Cleanliness", "type": "rating", "min": 0, "max": 5},
+    {"name": "Departure Delay in Minutes", "type": "integer", "min": 0, "max": 1600}
+  ],
+  "note": "Arrival Delay in Minutes, id, and Unnamed: 0 exist in the raw CSVs but are dropped before training — never expose them as required inputs in the API or form."
+}
